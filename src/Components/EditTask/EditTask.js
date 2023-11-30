@@ -2,7 +2,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import { useNavigate, useParams } from "react-router-dom";
 import { useAddTaskContext } from "../../AddTaskProvider";
 import { useEffect, useState } from "react";
-import "./EditTask.css";
+
 
 const EditTask = ({ setShow, show }) => {
   const { taskIndex } = useParams();

@@ -13,8 +13,7 @@ A simple Task Management App built with React for managing tasks.
   - [AddTask](#addtask)
   - [EditTask](#edittask)
 - [Setup](#setup)
-- [Usage](#usage)
--
+
 
 ## Introduction
 
@@ -25,7 +24,7 @@ This Task Management App allows users to manage their tasks efficiently. It prov
 - View a list of tasks
 - Add new tasks
 - Edit existing tasks
--Delete tasks
+- Delete tasks
 
 ## Project Structure
 

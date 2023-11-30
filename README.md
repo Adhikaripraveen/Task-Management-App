@@ -1,68 +1,82 @@
+# Task Management App
 
+A simple Task Management App built with React for managing tasks.
+#  Live Link of Site :-https://adhikariPraveen.github.io/Task-Management-App;
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Introduction](#introduction)
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Components](#components)
+  - [TaskList](#tasklist)
+  - [AddTask](#addtask)
+  - [EditTask](#edittask)
+- [Setup](#setup)
+- [Usage](#usage)
+-
 
-### `npm start`
+## Introduction
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This Task Management App allows users to manage their tasks efficiently. It provides a user-friendly interface with features such as task listing, adding new tasks,editing existing tasks and deleting the Tasks.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- View a list of tasks
+- Add new tasks
+- Edit existing tasks
+-Delete tasks
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Structure
 
-### `npm run build`
+Describe the high-level project structure here. You can use a tree structure to represent directories and files.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+task-management-app/
+|-- src/
+| |-- components/
+| |-- TaskList
+| |   |--TaskList.js
+| |   |--TaskList.css
+| |--AddTask
+| |   |--AddTask.js
+| |   |--AddTask.css
+| |-- EditTask
+|      |--EditTask.js
+|-- public/
+|-- package.json
+|-- README.md
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Components
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### TaskList
 
-### `npm run eject`
+The `TaskList` component displays a list of tasks. It allows users to mark tasks as completed, edit task details, and delete tasks.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![TaskList](./src/images/TaskList%20(2).png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### AddTask
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The `AddTask` component provides a form for users to add new tasks. Users can enter task details such as name, description,due date and priority.
+![AddTask](./src/images/AddTask.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### EditTask
 
-## Learn More
+The `EditTask` component allows users to edit the details of an existing task. It displays the current task details and updates them upon user input.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![EditTask](./src/images/EditTask.png)
+## Setup
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Provide instructions on how to set up the development environment.
 
-### Code Splitting
+```bash
+# Clone the repository
+git clone https://github.com/Adhikaripraveen/task-management-app.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Navigate to the project directory
+cd task-management-app
 
-### Analyzing the Bundle Size
+# Install dependencies
+npm install
+# Run the application
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

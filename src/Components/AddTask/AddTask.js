@@ -40,6 +40,7 @@ const AddTask = ({ show, setShow }) => {
 
       resetValue();
       setError(false);
+      navigate("/Task-Management-App")
     }
   };
 

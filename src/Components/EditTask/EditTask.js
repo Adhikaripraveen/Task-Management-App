@@ -50,12 +50,12 @@ const EditTask = ({ setShow, show }) => {
     localStorage.setItem("tasks", JSON.stringify(existingTasks));
 
     setShow(false);
-    navigate("/");
+    navigate("/Task-Management-App");
   };
 
   const handleClose = () => {
     setShow(false);
-    navigate("/");
+    navigate("/Task-Management-App");
   };
 
   return (

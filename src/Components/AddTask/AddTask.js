@@ -45,7 +45,7 @@ const AddTask = ({ show, setShow }) => {
 
   const handleClose = () => {
     setShow(false);
-    navigate("/");
+    navigate("/Task-Management-App");
   };
   return (
     <>

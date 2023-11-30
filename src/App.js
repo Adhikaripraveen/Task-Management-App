@@ -7,14 +7,11 @@ import EditTask from "./Components/EditTask/EditTask.js";
 import TaskList from "./Components/TaskList/TaskList.js";
 import AddIcon from "@mui/icons-material/Add";
 import { AddTaskProvider } from "./AddTaskProvider.js";
-
 import { BrowserRouter } from "react-router-dom";
-
 import "./App.css";
-
 const App = () => {
   const [show, setShow] = useState(false);
-  // const navigate=useNavigate();
+
   const myStyle = {
     fontSize: "2rem",
   };
@@ -23,20 +20,19 @@ const App = () => {
     <>
       <BrowserRouter>
         <AddTaskProvider>
-          {/* <Router> */}
           <div className="container">
             <div className="header">
               <p>Get Tasks Done</p>
-              <Link  onClick={()=>setShow(true)}to="/add" className="link">
-      <button>
-        <AddIcon style={myStyle} />
-        Add Task
-      </button>
-    </Link>
+              <Link onClick={() => setShow(true)} to="/add" className="link">
+                <button>
+                  <AddIcon style={myStyle} />
+                  Add Task
+                </button>
+              </Link>
             </div>
 
             <Routes>
-              <Route path="/" element={<TaskList />} />
+              <Route path="/Task-Management-App" element={<TaskList />} />
               <Route
                 path="/add"
                 element={<AddTask setShow={setShow} show={show} />}
@@ -47,7 +43,7 @@ const App = () => {
               />
             </Routes>
           </div>
-          {/* </Router> */}
+          
         </AddTaskProvider>
       </BrowserRouter>
     </>

@@ -12,17 +12,15 @@ const EditTask = ({ setShow, show }) => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Get existing tasks from localStorage or initialize an empty array
     const existingTasks = JSON.parse(localStorage.getItem("tasks")) || [];
-    // Find the task to edit based on the taskIndex
+
     const taskToEdit = existingTasks[taskIndex];
 
     if (taskToEdit) {
-      // Set the initial values of the local state
       setTaskValues({
         taskName: taskToEdit.name,
         taskDescription: taskToEdit.description,
-        taskDueDate:taskToEdit.dueDate,
+        taskDueDate: taskToEdit.dueDate,
         priority: taskToEdit.priority,
       });
     }
@@ -40,28 +38,24 @@ const EditTask = ({ setShow, show }) => {
   const handleSaveTask = (e) => {
     e.preventDefault();
 
-    // Get existing tasks from localStorage or initialize an empty array
     const existingTasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
-    // Update the task in the array
     existingTasks[taskIndex] = {
       name: taskValues.taskName,
       description: taskValues.taskDescription,
-      dueDate:taskValues.taskDueDate,
+      dueDate: taskValues.taskDueDate,
       priority: taskValues.priority,
     };
 
-    // Save the updated tasks array to localStorage
     localStorage.setItem("tasks", JSON.stringify(existingTasks));
 
-    // Close the EditTask component and navigate
     setShow(false);
     navigate("/");
   };
 
   const handleClose = () => {
     setShow(false);
-    navigate("/"); // Navigate to the TaskList component when closing
+    navigate("/");
   };
 
   return (
@@ -91,8 +85,15 @@ const EditTask = ({ setShow, show }) => {
             autoComplete="off"
             placeholder="Enter the Task Description"
           />
-          <label  className="prop" forhtml="taskDueDate">Enter Due Date</label>
-            <input type='date' name="taskDueDate" value={taskValues.taskDueDate} onChange={handleChange}></input>
+          <label className="prop" forhtml="taskDueDate">
+            Enter Due Date
+          </label>
+          <input
+            type="date"
+            name="taskDueDate"
+            value={taskValues.taskDueDate}
+            onChange={handleChange}
+          ></input>
           <div className="taskName prop">Priority</div>
           <select
             id="priority"

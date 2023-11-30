@@ -1,69 +1,71 @@
-.wrapper{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
-  position:relative;
-    margin-top:1rem;
-    font-family: 'Playfair Display', serif;
-    display:flex;
-    flex-direction: column;
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  margin-top: 1rem;
+  font-family: "Playfair Display", serif;
+  display: flex;
+  flex-direction: column;
 }
-.prop{
-    font-size: 2rem;
-    font-weight: 700;
-    margin: 1rem 0;
+.prop {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1rem 0;
 }
-.submit-button{
-    height: 5rem;
-    width: 15%;
-    padding: 1rem 1rem;
-    margin-top: 2rem;
-    border-radius: 2rem;
-    cursor: pointer;
-    border: none;
-    font-size: 2rem;
-    background-image: linear-gradient(108.7deg, rgba(221, 22, 224, 1) 11%, rgba(111, 22, 190, 1) 88.2%);
+.submit-button {
+  height: 5rem;
+  width: 15%;
+  padding: 1rem 1rem;
+  margin-top: 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  border: none;
+  font-size: 2rem;
+  background-image: linear-gradient(
+    108.7deg,
+    rgba(221, 22, 224, 1) 11%,
+    rgba(111, 22, 190, 1) 88.2%
+  );
 }
-input,textarea,select,option{
-    background: inherit;
-    outline: none;
-    border: none;
-    font-size: 2rem;
-    border-bottom: 2px solid black;
+input,
+textarea,
+select,
+option {
+  background: inherit;
+  outline: none;
+  border: none;
+  font-size: 2rem;
+  border-bottom: 2px solid black;
 }
-input::placeholder{
-    color:white;
-    margin-bottom: 1rem;
+input::placeholder {
+  color: white;
+  margin-bottom: 1rem;
 }
-textarea::placeholder{
-    color:white;
+textarea::placeholder {
+  color: white;
 }
-select{
-    color:white;
-    width:25%;
-  
+select {
+  color: white;
+  width: 30%;
 }
 
-  option{
-  
+option {
   background-color: rgb(202, 73, 202);
-  width:100%;
-  }
-  .select option{
-    color:black;
-    /* width:100%; */
-  }
-  .error{
-    font-size:1.5rem;
-    color:red;
-  }
+}
+.select option {
+  color: black;
 
-  
-  @media (max-width: 480px) {
-    .submit-button  {
-      width: 50%;
-      font-size: 1.5rem;
-    }
-    
+}
+.error {
+  font-size: 1.5rem;
+  color: red;
+}
+
+@media (max-width: 480px) {
+  .submit-button {
+    width: 50%;
+    font-size: 1.5rem;
   }
+}

@@ -7,7 +7,6 @@ import "./TaskList.css";
 const TaskList = () => {
   const navigate = useNavigate();
   const existingTasks = JSON.parse(localStorage.getItem("tasks")) || [];
-
   const [checkedTasks, setCheckedTasks] = useState(() => {
     const storedCheckedTasks =
       JSON.parse(localStorage.getItem("checkedTasks")) || [];
@@ -45,7 +44,7 @@ const myStyle={
   const handleEdit = (index) => {
     navigate(`/edit/${index}`, { state: { task: existingTasks[index] } });
   };
-//   console.log(existingTasks);
+
   return (
     <>
       <h1 className="heading">Task List</h1>

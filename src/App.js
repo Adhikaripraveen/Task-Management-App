@@ -36,7 +36,7 @@ const App = () => {
             </div>
 
             <Routes>
-              <Route path="/" element={<TaskList />} />
+              <Route path="/Task-Management-App/" element={<TaskList />} />
               <Route
                 path="/add"
                 element={<AddTask setShow={setShow} show={show} />}

@@ -12,6 +12,7 @@ const TaskList = () => {
       JSON.parse(localStorage.getItem("checkedTasks")) || [];
     return existingTasks.map((_, index) => storedCheckedTasks[index] || false);
   });
+  console.log(existingTasks)
 const myStyle={
     fontSize:'3rem',
     Color:'white',

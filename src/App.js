@@ -1,6 +1,6 @@
 // App.js
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
+
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import AddTask from "./Components/AddTask/AddTask.js";
 import EditTask from "./Components/EditTask/EditTask.js";
@@ -11,6 +11,7 @@ import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 const App = () => {
   const [show, setShow] = useState(false);
+  
 
   const myStyle = {
     fontSize: "2rem",
